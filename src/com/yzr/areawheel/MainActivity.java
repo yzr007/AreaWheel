@@ -39,12 +39,10 @@ public class MainActivity extends Activity implements OnClickListener {
 
 	@Override
 	public void onClick(View v) {
-		switch (v.getId()) {
-		case R.id.myArea:
+		if (v.getId()==R.id.myArea) {
+		
 			Toast.makeText(this, areaWheel.getArea(), Toast.LENGTH_SHORT).show();
-			break;
-		default:
-			break;
+		
 		}
 
 	}
